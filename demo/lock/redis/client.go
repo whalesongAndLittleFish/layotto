@@ -65,9 +65,9 @@ func main() {
 		StoreName:            storeName,
 		ResourceId:           resourceId,
 		LockOwner:            owner1,
-		XXX_NoUnkeyedLiteral: struct{}{},
-		XXX_unrecognized:     nil,
-		XXX_sizecache:        0,
+		//XXX_NoUnkeyedLiteral: struct{}{},
+		//XXX_unrecognized:     nil,
+		//XXX_sizecache:        0,
 	})
 	if err != nil {
 		panic(err)
@@ -99,9 +99,9 @@ func main() {
 			StoreName:            storeName,
 			ResourceId:           resourceId,
 			LockOwner:            owner2,
-			XXX_NoUnkeyedLiteral: struct{}{},
-			XXX_unrecognized:     nil,
-			XXX_sizecache:        0,
+			//XXX_NoUnkeyedLiteral: struct{}{},
+			//XXX_unrecognized:     nil,
+			//XXX_sizecache:        0,
 		})
 		if err != nil {
 			panic(err)

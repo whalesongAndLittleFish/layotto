@@ -271,6 +271,9 @@ func NewRuntimeGrpcServer(data json.RawMessage, opts ...grpc.ServerOption) (mgrp
 			runtime_lock.NewFactory("etcd", func() lock.LockStore {
 				return lock_etcd.NewEtcdLock(log.DefaultLogger)
 			}),
+			runtime_lock.NewFactory("redis_cluster",func() lock.LockStore{
+				return lock_redis.NewClusterRedisLock(log.DefaultLogger)
+			}),
 		),
 
 		//bindings
